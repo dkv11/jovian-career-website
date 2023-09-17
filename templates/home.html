@@ -11,18 +11,30 @@
         height:360px;
         width:100%;
         object-fit:cover;
+        margin-bottom:16px;
       }
     </style>
     
   <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
-          <h1 class="text-center mt-2 mb-4">Jovian Career</h1>
-          <img class="img-fluid" id="banner" src="https://jovian-career-website--deepakverma53.repl.co/static/banner.jpg"
+    {% include 'navbar.html'%}
+    <img class="img-fluid" id="banner" src="https://jovian-career-website--deepakverma53.repl.co/static/banner.jpg"
             height="320">
+    <div class="container">
+          
+          
+          
           <h2 class="text-center mt-2 mb-4">About Jovian</h2>
-          <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <div class="row" style="margin-bottom:16px">  
+      <div class="col-md-6">
+              <p class="lead">Lorem Ipsum is simply dummy text of the printing and       typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div class="d-none d-md-block col-md-6">
+          <img src="/static/people.jpg" style="height:320px;border-radius:4px;">
+      </div>
+    </div>
+        
           <h2 class="text-center mt-2 mb-4">Open Position</h2>
       
           <div>
@@ -32,10 +44,11 @@
     
           </div>
         <div style="text-align:center;">
-            <button class="btn btn-primary btn-lg">Contact Us</button>
-            <p class="mt-4">Copyright 2023,jovian</p>
+            <a class="btn btn-primary btn-lg" href="mailto:dv19961105@gmail.com?subject=Quetion%20about%20job%20Openings&body=My%20Name%20%3A%20%3CYour%20Name%3E%0D%0A%0D%0AMy%20Quetion%20%3A%20%3CYour%20Quetion%3E%0D%0A%0D%0A">Contact Us</a>
+            
         </div>
     </div>
+    {% include 'footer.html'%}
 	<script src="index.js"></script>
       
   </body>
